@@ -194,10 +194,10 @@ window.onload = function() {
 
   document.body.appendChild(messageBox);
 
-  messageBox.style.opacity = 0.5;
+  messageBox.style.opacity = 0.7;
 
   setInterval(function() {
-    messageBox.style.opacity = 0.5;
+    messageBox.style.opacity = 0.7;
     setTimeout(function() {
       messageBox.style.opacity = 0;
     }, 3000);
