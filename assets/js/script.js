@@ -206,7 +206,6 @@ window.onload = function() {
 
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
   alert("It is recommended to use Desktop Site mode.");
 });
