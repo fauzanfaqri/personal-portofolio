@@ -198,30 +198,5 @@ window.onload = function() {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  if (confirm("Do you want to enable Desktop Site mode?")) {
-      let meta = document.querySelector("meta[name=viewport]");
-      if (!meta) {
-          meta = document.createElement("meta");
-          meta.name = "viewport";
-          document.head.appendChild(meta);
-      }
-      meta.content = "width=1024";
-
-      document.body.classList.add("desktop-mode");
-
-      alert("Desktop Site mode enabled.");
-  } else {
-      alert("Desktop Site mode not enabled.");
-  }
+  alert("It is recommended to use Desktop Site mode.");
 });
-
-
-const style = document.createElement("style");
-style.innerHTML = `
-  .desktop-mode {
-      width: 1024px;
-      margin: 0 auto;
-  }
-`;
-document.head.appendChild(style);
-
