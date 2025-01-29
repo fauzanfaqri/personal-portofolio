@@ -185,7 +185,7 @@ document.querySelectorAll('.avatar-box img').forEach(img => {
 
 
 
-// suggestion message
+// suggestion message desktop
 window.onload = function() {
   const messageBox = document.createElement("div");
   messageBox.textContent = "Desktop Recommended!";
@@ -194,3 +194,13 @@ window.onload = function() {
 
   document.body.appendChild(messageBox);
 };
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (confirm("Do you want to enable Desktop Site mode?")) {
+      alert("Desktop Site mode enabled.");
+  } else {
+      alert("Desktop Site mode not enabled.");
+  }
+});
