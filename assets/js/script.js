@@ -188,12 +188,22 @@ document.querySelectorAll('.avatar-box img').forEach(img => {
 // suggestion message desktop
 window.onload = function() {
   const messageBox = document.createElement("div");
-  messageBox.textContent = "Desktop Recommended!";
+  messageBox.textContent = "Desktop Site Mode Recommended";
   
-  messageBox.classList.add("blinking-message");
+  messageBox.classList.add("message-box");
 
   document.body.appendChild(messageBox);
+
+  messageBox.style.opacity = 0.5;
+
+  setInterval(function() {
+    messageBox.style.opacity = 0.5;
+    setTimeout(function() {
+      messageBox.style.opacity = 0;
+    }, 3000);
+  }, 6000);
 };
+
 
 
 
