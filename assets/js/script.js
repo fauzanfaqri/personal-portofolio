@@ -164,7 +164,8 @@ for (let i = 0; i < navigationLinks.length; i++) {
 document.getElementById('certificate-link').addEventListener('click', function(event) {
   event.preventDefault();
   
-  this.style.pointerEvents = 'none';
+  const link = document.getElementById('certificate-link');
+  link.style.pointerEvents = 'none';
 
   document.getElementById('loading-spinner').style.display = 'inline-block';
 
@@ -174,6 +175,8 @@ document.getElementById('certificate-link').addEventListener('click', function(e
 
     setTimeout(function() {
       document.querySelector('.message').style.display = 'none';
+
+      link.style.pointerEvents = 'auto';
     }, 2000);
   }, 1000);
 });
