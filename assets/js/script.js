@@ -188,7 +188,7 @@ document.querySelectorAll('.avatar-box img').forEach(img => {
 // suggestion message
 window.onload = function() {
   const messageBox = document.createElement("div");
-  messageBox.textContent = "Desktop Site Mode Recommended";
+  messageBox.textContent = "Enjoy Exploring";
   
   messageBox.classList.add("message-box");
 
