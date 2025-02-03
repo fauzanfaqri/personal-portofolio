@@ -163,6 +163,8 @@ for (let i = 0; i < navigationLinks.length; i++) {
 // "sorry, you do not have access" message
 document.getElementById('certificate-link').addEventListener('click', function(event) {
   event.preventDefault();
+  
+  this.style.pointerEvents = 'none';
 
   document.getElementById('loading-spinner').style.display = 'inline-block';
 
