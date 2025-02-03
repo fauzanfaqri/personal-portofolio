@@ -185,7 +185,7 @@ document.querySelectorAll('.avatar-box img').forEach(img => {
 
 
 
-// suggestion message desktop
+// suggestion message
 window.onload = function() {
   const messageBox = document.createElement("div");
   messageBox.textContent = "Desktop Site Mode Recommended";
@@ -194,10 +194,10 @@ window.onload = function() {
 
   document.body.appendChild(messageBox);
 
-  messageBox.style.opacity = 0.7;
+  messageBox.style.opacity = 0.5;
 
   setInterval(function() {
-    messageBox.style.opacity = 0.7;
+    messageBox.style.opacity = 0.5;
     setTimeout(function() {
       messageBox.style.opacity = 0;
     }, 3000);
@@ -207,5 +207,5 @@ window.onload = function() {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  alert("It is recommended to use Desktop Site mode.");
+  alert("Recommended: Enable Desktop Site mode for better viewing on mobile. Ignore if using a desktop.");
 });
