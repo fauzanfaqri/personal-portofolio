@@ -212,5 +212,5 @@ window.onload = function() {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  alert("Recommended: Enable Desktop Site mode for better viewing on mobile. Ignore if using a desktop.");
+  alert("Recommended: Use Desktop Site mode for better mobile viewing. Ignore if on desktop.");
 });
